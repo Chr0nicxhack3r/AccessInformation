@@ -4,26 +4,50 @@
 		<style>
             body {
                 background-color: black;
-                color: red;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+                color: yellowgreen;
             }
+			body h1, h3 {
+				color: red;
+			}
             a {
                 color: white;
             }
+			.myTable {
+				border-collapse: collapse;
+				width: 15%;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+				border: 7px double white;
+    		}
+
+			.myTable th, .myTable td {
+				padding: 5px;
+				text-align: center;
+				border: 5px double white;
+			}
+
+			.myTable th{
+				color: red;
+			}
         </style>
     </head> 
     <body> 
         <article> 
             <header>
 				<center>
-					<h1>DISCLAIMER: (THIS IS FOR RUNELITE ONLY)</h1>
-					<h4><a href="https://runelite.net/" target="_blank">Download RuneLite</a></h4>
-					<h4><a href="https://raw.githubusercontent.com/Chr0nicxhack3r/AccessInformation/main/Chr0nicxHack3r%20Main%20Profile.properties" target="_blank">Download my RuneLite profile (right click and save link as)</a></h4>
+					<h1>DISCLAIMER:</h1>
 					<h3>NOBODY IS RESPONSIBLE FOR ANY ACTION TAKEN AGAINST YOU OR YOUR ACCOUNT WHEN USING THESE SCRIPT'S. YOU AGREE TO THIS WHEN YOU CLICK THE BUTTON AND START THE SCRIPT. AHK SCRIPT'S ARE STILL AN OFFENSE TO JAGEX SO USE WITH CAUTION.</h3>
-					<h3>The way this program performs is locking your mouse movement and sometimes keyboard. This may cause your antivirus to flag it as a threat! The best bet is to create a folder and add an exception for the folder to your firewall.</h3>
-					<h3>Also in the runelite plugins make sure stretched mode is off.</h3>
-					<h3>To reload the program at anytime please press "F12" and "Home" to close.</h3>
-					<h3>Make sure to monitor all scripts when running. They can mess up or fail safe's can trigger. So be around in case you need to act.</h3>
-					<table border="10">
+					<h5><a href="https://runelite.net/" target="_blank">Download RuneLite</a></h5>
+					<h5><a href="https://raw.githubusercontent.com/Chr0nicxhack3r/AccessInformation/main/Chr0nicxHack3r%20Main%20Profile.properties" target="_blank">Download my RuneLite profile (right click and save link as)</a></h5>
+					<h5>The way this program performs is locking your mouse movement and sometimes keyboard. This may cause your antivirus to flag it as a threat! The best bet is to create a folder and add an exception for the folder to your firewall.</h5>
+					<h5>Also in the runelite plugins make sure stretched mode is off.</h5>
+					<h5>To reload the program at anytime please press "F12" and "Home" to close.</h5>
+					<h5>Make sure to monitor all scripts when running. They can mess up or fail safe's can trigger. So be around in case you need to act.</h5>
+					<h5>Upon reading this, edit EssentialFiles\ScriptSettings.ini accordingly. Modified variables will take affect on next script start.</h5>
+					<table class="myTable">
+						<tr>
+							<th colspan="2">Mouse Movement Example</th>
+						</tr>
 						<tr>
 							<th>Value</th>
 							<th>Speed</th>
@@ -42,7 +66,28 @@
 						</tr>
 					</table>
 					<br>
-					<table border="10">
+					<table class="myTable">
+						<tr>
+							<th colspan="2">Sound Beep Example</th>
+						</tr>
+						<tr>
+							<th>Value</th>
+							<th>Pitch</th>
+						</tr>
+						<tr>
+							<td>750</td>
+							<td>Low Pitch</td>
+						</tr>
+						<tr>
+							<td>2000</td>
+							<td>Higher Pitch</td>
+						</tr>
+					</table>
+					<br>
+					<table class="myTable">
+						<tr>
+							<th colspan="2">Miliseconds/Seconds Example</th>
+						</tr>
 						<tr>
 							<th>Milliseconds</th>
 							<th>Seconds</th>
@@ -69,7 +114,10 @@
 						</tr>
 					</table>
 					<br>
-					<table border="10">
+					<table class="myTable">
+						<tr>
+							<th colspan="2">Hex Color Example</th>
+						</tr>
 						<tr>
 							<th>Hex</th>
 							<th>Color</th>
@@ -87,7 +135,6 @@
 							<td>Pink</td>
 						</tr>
 					</table>
-					<h3><font color="red">Upon reading this, close script and edit EssentialFiles\ScriptSettings.ini accordingly. Modified variables will take affect on next start.</font></h3>
 				</center>
             </header> 
         </article> 
